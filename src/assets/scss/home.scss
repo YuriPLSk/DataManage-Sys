@@ -1,0 +1,85 @@
+.home{
+    .user{
+        display: flex;
+        align-items: center;
+        padding: 15px 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #b0b0b0;
+        // justify-content: center;
+        .el-avatar{
+            width: 140px;
+            height: 140px;
+        }
+        // 即为.userInfo
+        &Info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 50px;
+            .name{
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+            .address{
+                font-size: 16px;
+                color: #999;
+            }
+        }
+    }
+    .loginInfo{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        line-height: 28px;
+        font-size: 14px;
+        color: #999;
+    }
+    // background-color: #999;
+    .num{
+        display: flex;
+        // align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .el-card{
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            width: 32%;
+            /deep/.el-card__body{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 0px;
+                i{
+                    width: 80px;
+                    border-radius: 3px;
+                    height: 80px;
+                    padding: 0px;
+                    margin:0px;
+                    text-align: center;
+                    line-height: 80px;
+                    font-size: 42px;
+    
+                }
+                .detail{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 30px;
+                    .num{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .picture{
+        display: flex;
+        // align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+        .el-card{
+            margin-top: 30px;
+            width: 46%;
+        }
+    }
+}
